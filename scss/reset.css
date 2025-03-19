@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+* {margin: 0; padding: 0;}
+
+/* 화면을 가로로 돌렷을때 가로로 정렬되게 함 */
+html {-webkit-text-size-adjust: none; text-size-adjust: none;}
+
+/* 기본 여백 초기화 */
+body {margin: 0;}
+h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, p {margin: 0; padding: 0;}
+
+/* 제목태그 글자 굵기 */
+h1, h2, h3, h4, h5, h6 {font-weight: 500;}
+
+/* a 링크 초기화 */
+a {color: inherit; text-decoration: inherit;}
+
+/* 블릿 기호 초기화 */
+dl,ul,ol,li,menu {list-style: none;}
+
+/* 폰트 스타일 초기화 */
+address, em, i, cite {font-style: normal;}
+
+img, video {vertical-align: middle; max-width: 100%;}
+table {border-collapse: collapse;}
+table caption {overflow: hidden; width: 0; height: 0;}
+
+/* pc사이즈 일때 모바일 디자인을 보이지 않게 함, 중요! */
+/*.mobile {display: none !important;}*/
+
+
+br.only-m {content: '';}
+br.only-m::after {content: '\00a0';}
+
+
+/* 아이콘 넣을때 대체 텍스트 숨기기 */
+i[class^="fa"] {position: relative; display: inline-block; vertical-align: middle;}
+i[class^="fa"] span {position: absolute; left: -9999px;}
+
+
+/* clearfix */
+.clearfix::after {content: ''; display: block; clear: both;}
+
+
+/* IR효과 */
+.ir-hidden {position: absolute; left: -9999px;}
