@@ -734,6 +734,7 @@
 .script .script__inner .script__list ul li .top a img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
   transition: all 0.5s;
 }
 .script .script__inner .script__list ul li .top a > div {
