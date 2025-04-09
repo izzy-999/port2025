@@ -4,6 +4,26 @@ gsap.registerPlugin(CSSPlugin);
 // header
 
 // main
+gsap.set(".main .title h1 span, .main .title p", {
+    opacity: 0,
+    y: 50
+});
+
+const mainAnim = gsap.timeline({});
+
+mainAnim
+    .to(".main .title h1 span", {
+        opacity: 1,
+        y: 0,
+        duration: 0.7,
+        stagger: 0.5,
+    })
+    .to(".main .title p", {
+        opacity: 1,
+        y: 0,
+        duration: 0.7,
+    })
+
 
 // about
 
@@ -56,3 +76,4 @@ createProjectAnimation();
 
 
 // footer 
+

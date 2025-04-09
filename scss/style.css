@@ -162,6 +162,9 @@
   font-weight: 800;
   margin-bottom: 6rem;
 }
+.main .main__inner .title h1 span {
+  display: inline-block;
+}
 .main .main__inner .title p {
   font-size: clamp(1.8rem, 2vw, 2rem);
   line-height: 1.8;
